@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeeEndVN</title>
+  <meta name="description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --surface: #ffffff;
+      --text: #1b1b1f;
+      --muted: #5f6068;
+      --border: #e6e5e0;
+      --accent: #c2410c;
+      --accent-soft: #fdeee6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121214;
+        --surface: #1b1b1f;
+        --text: #ececee;
+        --muted: #a0a1a8;
+        --border: #2c2c32;
+        --accent: #fb923c;
+        --accent-soft: #2a1d15;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 72px 20px 48px;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.2;
+      margin: 24px 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.125rem;
+      margin: 0 0 28px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 56px;
+    }
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    section { margin-bottom: 48px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .glyph {
+      flex: none;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    .card h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .card p { margin: 0 0 12px; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags span {
+      font-size: 0.8rem;
+      padding: 2px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .about p { margin: 0 0 12px; }
+    footer {
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+    @media (max-width: 480px) {
+      main { padding-top: 48px; }
+      h1 { font-size: 1.85rem; }
+      .card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="avatar" src="https://github.com/TeeEndVN.png" alt="TeeEndVN avatar">
+    <h1>Hi, I'm TeeEndVN</h1>
+    <p class="tagline">Mobile developer building apps with Flutter.</p>
+
+    <nav class="links">
+      <a href="https://github.com/TeeEndVN">GitHub</a>
+    </nav>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>I build cross-platform mobile apps with Flutter and Supabase. Right now I'm working on Mojimo, an app for learning Japanese.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="glyph" aria-hidden="true">文</div>
+        <div>
+          <h3>Mojimo</h3>
+          <p>Scan and learn Japanese from any app. It has an offline dictionary, kanji breakdowns and a scan overlay that works on top of other apps.</p>
+          <div class="tags"><span>Flutter</span><span>Supabase</span><span>Android</span><span>iOS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 TeeEndVN</footer>
+  </main>
+</body>
+</html>
