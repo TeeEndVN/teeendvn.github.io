@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TeeEndVN</title>
   <meta name="description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
+  <link rel="icon" type="image/png" href="assets/mojimo-icon-64.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,8 +16,8 @@
       --text: #1b1b1f;
       --muted: #5f6068;
       --border: #e6e5e0;
-      --accent: #c2410c;
-      --accent-soft: #fdeee6;
+      --accent: #2f7fe6;
+      --accent-soft: #e6f0fd;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -25,8 +26,8 @@
         --text: #ececee;
         --muted: #a0a1a8;
         --border: #2c2c32;
-        --accent: #fb923c;
-        --accent-soft: #2a1d15;
+        --accent: #5b9df0;
+        --accent-soft: #15213a;
       }
     }
     * { box-sizing: border-box; }
@@ -94,18 +95,15 @@
       gap: 20px;
       align-items: flex-start;
     }
-    .glyph {
+    .app-icon {
       flex: none;
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      display: grid;
-      place-items: center;
-      font-size: 1.75rem;
-      font-weight: 700;
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      display: block;
     }
+    .play { display: inline-block; margin: 16px 0 0 -10px; }
+    .play img { height: 58px; display: block; }
     .card h3 { margin: 0 0 4px; font-size: 1.15rem; }
     .card p { margin: 0 0 12px; color: var(--muted); }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -148,11 +146,14 @@
     <section>
       <h2>Projects</h2>
       <div class="card">
-        <div class="glyph" aria-hidden="true">文</div>
+        <img class="app-icon" src="assets/mojimo-icon.png" alt="Mojimo app icon" width="72" height="72">
         <div>
           <h3>Mojimo</h3>
           <p>Scan and learn Japanese from any app. It has an offline dictionary, kanji breakdowns and a scan overlay that works on top of other apps.</p>
           <div class="tags"><span>Flutter</span><span>Supabase</span><span>Android</span><span>iOS</span></div>
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod" target="_blank" rel="noopener">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+          </a>
         </div>
       </div>
     </section>
