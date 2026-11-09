@@ -105,6 +105,12 @@
     .play { display: inline-block; margin: 4px 0 0 -10px; }
     .play img { height: 58px; display: block; }
     .card h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .card h3 a { color: var(--text); text-decoration: none; }
+    .card h3 a:hover { color: var(--accent); }
+    .app-link { flex: none; display: block; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; }
+    .more { color: var(--accent); font-weight: 500; text-decoration: none; }
+    .more:hover { text-decoration: underline; }
     .card p { margin: 0 0 12px; color: var(--muted); }
     footer {
       color: var(--muted);
@@ -127,18 +133,22 @@
 
     <nav class="links">
       <a href="https://github.com/TeeEndVN">GitHub</a>
+      <a href="https://teeendvn.github.io/mojimo_support/">Mojimo</a>
     </nav>
 
     <section>
       <h2>Projects</h2>
       <div class="card">
-        <img class="app-icon" src="assets/mojimo-icon.png" alt="Mojimo app icon" width="72" height="72">
+        <a class="app-link" href="https://teeendvn.github.io/mojimo_support/"><img class="app-icon" src="assets/mojimo-icon.png" alt="Mojimo app icon" width="72" height="72"></a>
         <div>
-          <h3>Mojimo</h3>
+          <h3><a href="https://teeendvn.github.io/mojimo_support/">Mojimo</a></h3>
           <p>Read Japanese anywhere. Scan text in any app, game or photo to see readings and meanings right away, save new words to your library, and learn the kanji behind them.</p>
+          <div class="actions">
           <a class="play" href="https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod" target="_blank" rel="noopener">
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
           </a>
+          <a class="more" href="https://teeendvn.github.io/mojimo_support/">Learn more →</a>
+          </div>
         </div>
       </div>
     </section>

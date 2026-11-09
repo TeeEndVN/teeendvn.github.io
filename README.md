@@ -5,6 +5,7 @@ Personal homepage of TeeEndVN, hosted on GitHub Pages at https://teeendvn.github
 ## Projects
 
 - **Mojimo**: scan and learn Japanese from any app.
+  [Landing page](https://teeendvn.github.io/mojimo_support/) ·
   [Get it on Google Play](https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod)
 
 ## Structure
