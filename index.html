@@ -3,9 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TeeEndVN</title>
+  <title>TeeEndVN – Mobile developer, maker of Mojimo</title>
   <meta name="description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
-  <link rel="icon" type="image/png" href="assets/mojimo-icon-64.png">
+  <link rel="canonical" href="https://teeendvn.com/">
+  <meta property="og:site_name" content="TeeEndVN">
+  <meta property="og:title" content="TeeEndVN – Mobile developer, maker of Mojimo">
+  <meta property="og:description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://teeendvn.com/">
+  <meta property="og:image" content="https://teeendvn.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TeeEndVN avatar with the tagline Mobile developer, maker of Mojimo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TeeEndVN">
+  <meta name="twitter:creator" content="@TeeEndVN">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="assets/avatar-64.png">
+  <link rel="apple-touch-icon" href="assets/avatar-180.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://teeendvn.com/#person",
+        "name": "TeeEndVN",
+        "url": "https://teeendvn.com/",
+        "image": "https://teeendvn.com/assets/avatar.jpg",
+        "jobTitle": "Mobile developer",
+        "sameAs": [
+          "https://github.com/TeeEndVN",
+          "https://x.com/TeeEndVN"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://teeendvn.com/#website",
+        "name": "TeeEndVN",
+        "url": "https://teeendvn.com/",
+        "inLanguage": "en",
+        "author": { "@id": "https://teeendvn.com/#person" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Mojimo",
+        "url": "https://mojimo.teeendvn.com/",
+        "operatingSystem": "ANDROID",
+        "applicationCategory": "EducationalApplication",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": { "@id": "https://teeendvn.com/#person" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,25 +116,8 @@
     .tagline {
       color: var(--muted);
       font-size: 1.125rem;
-      margin: 0 0 28px;
+      margin: 0 0 56px;
     }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 56px;
-    }
-    .links a {
-      color: var(--text);
-      text-decoration: none;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      padding: 8px 16px;
-      border-radius: 999px;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-    .links a:hover { border-color: var(--accent); color: var(--accent); }
     h2 {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -117,7 +157,23 @@
       font-size: 0.85rem;
       border-top: 1px solid var(--border);
       padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
     }
+    footer a { color: inherit; text-decoration: none; }
+    .social { display: flex; gap: 4px; }
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+    .social a:hover { color: var(--accent); background: var(--surface); }
+    .social svg { width: 20px; height: 20px; fill: currentColor; display: block; }
     @media (max-width: 480px) {
       main { padding-top: 48px; }
       h1 { font-size: 1.85rem; }
@@ -127,14 +183,9 @@
 </head>
 <body>
   <main>
-    <img class="avatar" src="https://github.com/TeeEndVN.png" alt="TeeEndVN avatar">
+    <img class="avatar" src="assets/avatar.jpg" alt="TeeEndVN avatar" width="88" height="88">
     <h1>Hi, I'm TeeEndVN</h1>
     <p class="tagline">Mobile developer and maker of Mojimo.</p>
-
-    <nav class="links">
-      <a href="https://github.com/TeeEndVN">GitHub</a>
-      <a href="https://mojimo.teeendvn.com/">Mojimo</a>
-    </nav>
 
     <section>
       <h2>Projects</h2>
@@ -145,7 +196,7 @@
           <p>Read Japanese anywhere. Scan text in any app, game or photo to see readings and meanings right away, save new words to your library, and learn the kanji behind them.</p>
           <div class="actions">
           <a class="play" href="https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod" target="_blank" rel="noopener">
-            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="150" height="58">
           </a>
           <a class="more" href="https://mojimo.teeendvn.com/">Learn more →</a>
           </div>
@@ -153,7 +204,17 @@
       </div>
     </section>
 
-    <footer>© 2026 TeeEndVN</footer>
+    <footer>
+      <span>© 2026 <a href="https://teeendvn.com/">TeeEndVN</a></span>
+      <nav class="social" aria-label="Social links">
+        <a href="https://github.com/TeeEndVN" rel="me" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://x.com/TeeEndVN" rel="me" aria-label="X" title="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg>
+        </a>
+      </nav>
+    </footer>
   </main>
 </body>
 </html>
