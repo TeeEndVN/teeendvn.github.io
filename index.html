@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TeeEndVN - Mobile developer, maker of Mojimo</title>
-  <meta name="description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
+  <title>TeeEndVN - Mobile developer, maker of Mojimo and Kitsunebi</title>
+  <meta name="description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo and Kitsunebi.">
   <link rel="canonical" href="https://teeendvn.com/">
   <meta property="og:site_name" content="TeeEndVN">
-  <meta property="og:title" content="TeeEndVN - Mobile developer, maker of Mojimo">
-  <meta property="og:description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo.">
+  <meta property="og:title" content="TeeEndVN - Mobile developer, maker of Mojimo and Kitsunebi">
+  <meta property="og:description" content="Personal homepage of TeeEndVN, mobile developer and maker of Mojimo and Kitsunebi.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://teeendvn.com/">
   <meta property="og:image" content="https://teeendvn.com/assets/og-image.jpg">
@@ -53,6 +53,23 @@
         "operatingSystem": "ANDROID",
         "applicationCategory": "EducationalApplication",
         "installUrl": "https://play.google.com/store/apps/details?id=com.teeendvn.mojimo.prod",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": { "@id": "https://teeendvn.com/#person" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Kitsunebi",
+        "alternateName": "狐火",
+        "url": "https://kitsunebi.teeendvn.com/",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.teeendvn.kitsunebi.prod",
+        "genre": ["Idle", "Roguelite"],
+        "gamePlatform": ["Android", "iOS", "Web browser"],
+        "applicationCategory": "GameApplication",
+        "inLanguage": ["en", "ja"],
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -148,6 +165,8 @@
     .card h3 a { color: var(--text); text-decoration: none; }
     .card h3 a:hover { color: var(--accent); }
     .app-link { flex: none; display: block; }
+    .pixelated { image-rendering: pixelated; }
+    .card + .card { margin-top: 16px; }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; }
     .more { color: var(--accent); font-weight: 500; text-decoration: none; }
     .more:hover { text-decoration: underline; }
@@ -185,7 +204,7 @@
   <main>
     <img class="avatar" src="assets/avatar.jpg" alt="TeeEndVN avatar" width="88" height="88">
     <h1>Hi, I'm TeeEndVN</h1>
-    <p class="tagline">Mobile developer and maker of Mojimo.</p>
+    <p class="tagline">Mobile developer and maker of Mojimo and Kitsunebi.</p>
 
     <section>
       <h2>Projects</h2>
@@ -199,6 +218,20 @@
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="150" height="58">
           </a>
           <a class="more" href="https://mojimo.teeendvn.com/">Learn more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a class="app-link" href="https://kitsunebi.teeendvn.com/"><img class="app-icon pixelated" src="assets/kitsunebi-icon.png" alt="Kitsunebi app icon" width="72" height="72"></a>
+        <div>
+          <h3><a href="https://kitsunebi.teeendvn.com/">Kitsunebi</a> <span lang="ja">狐火</span></h3>
+          <p>An offline idle roguelite from Japanese folklore. A fox spirit walks a mountain of torii gates and fights the yokai in its way, while you choose its blessings and grow the shrine.</p>
+          <div class="actions">
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.teeendvn.kitsunebi.prod" target="_blank" rel="noopener">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="150" height="58">
+          </a>
+          <a class="more" href="https://kitsunebi.teeendvn.com/play/">Play the free demo →</a>
+          <a class="more" href="https://kitsunebi.teeendvn.com/">Learn more →</a>
           </div>
         </div>
       </div>
