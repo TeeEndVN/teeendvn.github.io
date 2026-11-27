@@ -17,6 +17,6 @@
   <circle cx="315" cy="315" r="178" fill="none" stroke="#5b9df0" stroke-opacity="0.55" stroke-width="4"/>
   <image href="avatar.jpg" xlink:href="avatar.jpg" x="145" y="145" width="340" height="340" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
   <text x="560" y="300" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="96" font-weight="700" fill="#ececee" letter-spacing="-2">TeeEndVN</text>
-  <text x="564" y="372" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500" fill="#a0a1a8">Mobile developer,</text>
-  <text x="564" y="422" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500" fill="#a0a1a8">maker of <tspan fill="#5b9df0">Mojimo</tspan></text>
+  <text x="564" y="372" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500" fill="#a0a1a8">Mobile developer, maker of</text>
+  <text x="564" y="422" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500" fill="#a0a1a8"><tspan fill="#5b9df0">Mojimo</tspan> and <tspan fill="#5b9df0">Kitsunebi</tspan></text>
 </svg>
